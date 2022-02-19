@@ -62,10 +62,10 @@ function play() {
     console.log(numberGuessedValue);
 
     if (numberGuessedValue < masterNumber && counter <= tries) {
-        output.innerHTML += `Your number is too low<br>`;
+        output.innerHTML += `Try a higher number<br>`;
     }
     else if (numberGuessedValue > masterNumber && counter <= tries) {
-        output.innerHTML += `Your number is too high<br>`;
+        output.innerHTML += `Try a lower number<br>`;
     }
     else if (numberGuessedValue === masterNumber && counter <= tries) {
         // output.innerHTML += `Congrats!!!`;
