@@ -72,7 +72,7 @@ function play() {
         congrats.classList.remove("hidden");
     }
 
-    if (counter > tries) {
+    if (counter >= tries) {
         // output.innerHTML = `sorry, game over`;
         gameOver.classList.remove("hidden");
         master.innerHTML = `${masterNumber}`;
