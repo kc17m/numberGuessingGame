@@ -19,7 +19,8 @@
     <main>
         <fieldset>
             <form action="" id="check" onsubmit=" return false >
-                <label for=" flexRadioDefault">In how many rounds you think you can guess the number?</label>
+                <label for=" flexRadioDefault">In how many rounds you think you can guess the correct number? It can be
+                any number between 1 and 100?</label>
                 <br>
                 <div class="radio">
                     <input id="four" value="4" type="radio" name="flexRadioDefault">
@@ -43,7 +44,7 @@
                     </label>
                 </div>
                 <div id="customInput" class="hidden">
-                    <label for="customNum">Please enter a custom number</label>
+                    <label for="customNum">Please set your number of attempts</label><br>
                     <input type="number" class="form-control" id="customNum">
                 </div>
                 <div id="attempts" class="hidden">
@@ -67,7 +68,7 @@
             </form>
         </fieldset>
         <div id="gameover" class="hidden">
-            <h3>Sorry, max attempts exceeded - Game over!</h3>
+            <h3>Sorry, max attempts exceeded. Correct number was <span id="master"></span> - Game over!</h3>
             <button class="btn btn-secondary" onclick="restart()">Try Again?</button>
         </div>
         <div id="congrats" class="hidden">

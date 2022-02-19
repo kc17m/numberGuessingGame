@@ -21,6 +21,8 @@ console.log(masterNumber);
 let congrats = document.getElementById("congrats");
 let gameOver = document.getElementById("gameover");
 
+let master = document.getElementById("master");
+
 function change() {
     console.log("test change");
     if (custom.checked = true) {
@@ -73,6 +75,8 @@ function play() {
     if (counter > tries) {
         // output.innerHTML = `sorry, game over`;
         gameOver.classList.remove("hidden");
+        master.innerHTML = `${masterNumber}`;
+
     }
 
 
