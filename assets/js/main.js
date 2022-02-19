@@ -61,10 +61,10 @@ function play() {
     let numberGuessedValue = Number(numberGuessed.value);
     console.log(numberGuessedValue);
 
-    if (numberGuessedValue < masterNumber && counter <= tries) {
+    if (numberGuessedValue < masterNumber && counter < tries) {
         output.innerHTML += `Try a higher number<br>`;
     }
-    else if (numberGuessedValue > masterNumber && counter <= tries) {
+    else if (numberGuessedValue > masterNumber && counter < tries) {
         output.innerHTML += `Try a lower number<br>`;
     }
     else if (numberGuessedValue === masterNumber && counter <= tries) {
